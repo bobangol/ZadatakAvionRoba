@@ -13,7 +13,7 @@ import java.util.List;
 public class Zadatak2DodavanjeVrednosti {
 
     static Dao<Roba,Integer> robaDao;
-    static Dao<Avion,Integer> avionDao;
+    public static Dao<Avion,Integer> avionDao;
 
     public static void main(String[] args) {
 
