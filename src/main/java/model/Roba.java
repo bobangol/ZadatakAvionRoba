@@ -56,5 +56,13 @@ public class Roba {
         this.tezina = tezina;
     }
 
-
+    @Override
+    public String toString() {
+        return "Roba{" +
+                "id=" + id +
+                ", naziv='" + naziv + '\'' +
+                ", opis='" + opis + '\'' +
+                ", tezina=" + tezina +
+                '}';
+    }
 }
