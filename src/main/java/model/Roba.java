@@ -21,15 +21,19 @@ public class Roba {
     @DatabaseField(columnName = POLJE_TEZINA,canBeNull = false)
     private  double tezina;
 
+    @DatabaseField(foreign = true, foreignAutoRefresh = true, canBeNull = false)
+    private Avion avion;
+
 
     public Roba(){
 
     }
 
-    public Roba(String naziv, String opis, double tezina){
+    public Roba(String naziv, String opis, double tezina, Avion avion){
         this.naziv = naziv;
         this.opis = opis;
         this.tezina = tezina;
+        this.avion = avion;
     }
 
     public String getNaziv() {
@@ -54,6 +58,14 @@ public class Roba {
 
     public void setTezina(double tezina) {
         this.tezina = tezina;
+    }
+
+    public Avion getAvion() {
+        return avion;
+    }
+
+    public void setAvion(Avion avion) {
+        this.avion = avion;
     }
 
     @Override
