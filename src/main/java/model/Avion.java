@@ -17,6 +17,9 @@ public class Avion {
     @DatabaseField(columnName = POLJE_RASPON_KRILA,canBeNull = false)
     private int rasponKrila;
 
+    @DatabaseField(foreign = true, foreignAutoRefresh = true, canBeNull = false)
+    private Roba roba;
+
     public Avion(){
 
     }
